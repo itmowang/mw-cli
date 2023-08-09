@@ -1,0 +1,22 @@
+{
+  "name": "@mw-cli/mw-create",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "mwcli": "./bin/index.ts"
+  },
+  "scripts": {
+    "test": "ts-node ./bin/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.9"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "ts-node": "^10.9.1"
+  }
+}
