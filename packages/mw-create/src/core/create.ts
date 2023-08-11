@@ -52,7 +52,7 @@ const createCommand = async () => {
     const response = await prompts(questions);
     const { projectName, projectVersion, projectTemplate } = response;
     if (projectTemplate === "vue") {
-      vueCommand();
+      vueCommand(response);
     }
 
   })();

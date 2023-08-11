@@ -1,7 +1,14 @@
 const prompts = require("prompts");
 const config = require("../config/repo.config.ts");
 
-const vueCreate = async () => {
+interface Create {
+    projectName: string; // 项目名称
+    projectVersion: string; // 项目版本号
+    projectTemplate: string; // 项目模版
+}
+
+// 读取vue模版
+const vueCreate = async (create:Create) => {
   const {
     blue,
     cyan,
@@ -29,10 +36,10 @@ const vueCreate = async () => {
   (async () => {
     const response = await prompts(questions);
     const { vueTemplate } = response;
-    // 开始处理
+    // 下载一号模版
     if (vueTemplate == "1") {
       const downloadFile = require("../util/download.ts");
-      downloadFile(config, "vue-template", process.cwd(), (err: any) => {
+      downloadFile(config, create.projectName , process.cwd(), (err: any) => {
         if (err) {
           console.log(err);
         } else {
@@ -41,6 +48,8 @@ const vueCreate = async () => {
         }
       });
     }
+    // ...
+
   })();
 };
 
