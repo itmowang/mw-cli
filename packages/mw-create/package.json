@@ -20,7 +20,7 @@
     "download-git-repo": "^3.0.2",
     "kolorist": "^1.8.0",
     "minimist": "^1.2.8",
-    "ora": "^7.0.1",
+    "ora": "5.4.1",
     "prompts": "^2.4.2",
     "ts-node": "^10.9.1"
   }

@@ -7,6 +7,7 @@
  */
 
 const gitRepo = require("download-git-repo");
+const { blue,lightRed,lightGreen } = require("kolorist");
 
 function downloadFile(
   url: string,
@@ -14,10 +15,15 @@ function downloadFile(
   dest: string,
   callback: Function
 ) {
+  const ora = require("ora");
+  const spinner = ora(blue("下载模版中..."));
+  spinner.start();
   gitRepo(url, `${dest}/${filename}`, { clone: false }, (err: any) => {
     if (err) {
+      spinner.fail(lightRed(`项目模版创建失败,${err}`));
       callback(err);
     } else {
+      spinner.succeed(lightGreen("项目模版创建成功") );
       callback(null);
     }
   });

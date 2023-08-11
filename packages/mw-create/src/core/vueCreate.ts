@@ -36,20 +36,10 @@ const vueCreate = async () => {
         if (err) {
           console.log(err);
         } else {
-          console.log(lightGreen("项目创建成功"));
+          // 下载成功后就退出进程
+          process.exit();
         }
       });
-      //   console.log(lightBlue("正在下载模版..."));
-      //     console.log(downloadFile)
-      //   const { vueTemplate } = config;
-      //   const { vueTemplateUrl, vueTemplateName } = vueTemplate;
-      //   downloadFile(vueTemplateUrl, vueTemplateName, process.cwd(), (err: any) => {
-      //     if (err) {
-      //       console.log(err);
-      //     } else {
-      //       console.log(lightGreen("项目创建成功"));
-      //     }
-      //   });
     }
   })();
 };
