@@ -14,7 +14,7 @@ function downloadFile(
   dest: string,
   callback: Function
 ) {
-  gitRepo(url, `${dest}/${filename}`, { clone: true }, (err: any) => {
+  gitRepo(url, `${dest}/${filename}`, { clone: false }, (err: any) => {
     if (err) {
       callback(err);
     } else {
