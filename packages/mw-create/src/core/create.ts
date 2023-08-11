@@ -1,5 +1,5 @@
 // 读取vue模版
-const vueCommand = require("./vueCreate.ts");
+const vueCommand = require("./vueCreate");
 
 const createCommand = async () => {
   const {

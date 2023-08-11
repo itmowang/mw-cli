@@ -2,9 +2,9 @@
   "name": "@mw-cli/mw-create",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/bin/index.js",
   "bin": {
-    "mwcli": "./bin/index.ts"
+    "mwcli": "./lib/bin/index.js"
   },
   "scripts": {
     "test": "ts-node ./bin/index",

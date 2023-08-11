@@ -1,5 +1,5 @@
 const prompts = require("prompts");
-const config = require("../config/repo.config.ts");
+const config = require("../config/repo.config");
 
 interface Create {
     projectName: string; // 项目名称
@@ -38,7 +38,7 @@ const vueCreate = async (create:Create) => {
     const { vueTemplate } = response;
     // 下载一号模版
     if (vueTemplate == "1") {
-      const downloadFile = require("../util/download.ts");
+      const downloadFile = require("../util/download");
       downloadFile(config, create.projectName , process.cwd(), (err: any) => {
         if (err) {
           console.log(err);
