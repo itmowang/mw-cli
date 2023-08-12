@@ -10,9 +10,6 @@ importers:
       '@mw-cli/mw-create':
         specifier: ^1.0.0
         version: link:packages/mw-create
-      '@mw-cli/template':
-        specifier: workspace:^
-        version: link:packages/template
       '@types/node':
         specifier: ^20.4.9
         version: 20.4.9
@@ -33,6 +30,9 @@ importers:
       download-git-repo:
         specifier: ^3.0.2
         version: 3.0.2
+      fs:
+        specifier: 0.0.1-security
+        version: 0.0.1-security
       kolorist:
         specifier: ^1.8.0
         version: 1.8.0
@@ -54,26 +54,6 @@ importers:
         version: 20.4.9
 
   packages/mw-create/template/template-vue3:
-    dependencies:
-      '@vitejs/plugin-vue':
-        specifier: ^4.2.3
-        version: 4.2.3(vite@4.4.9)(vue@3.3.4)
-      less:
-        specifier: ^4.2.0
-        version: 4.2.0
-      typescript:
-        specifier: ^5.1.6
-        version: 5.1.6
-      vite:
-        specifier: ^4.4.9
-        version: 4.4.9(@types/node@20.4.9)(less@4.2.0)
-      vue:
-        specifier: ^3.3.4
-        version: 3.3.4
-
-  packages/template: {}
-
-  packages/template/template-vue3:
     dependencies:
       '@vitejs/plugin-vue':
         specifier: ^4.2.3
@@ -919,6 +899,10 @@ packages:
 
   /fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
+    dev: false
+
+  /fs@0.0.1-security:
+    resolution: {integrity: sha512-3XY9e1pP0CVEUCdj5BmfIZxRBTSDycnbqhIOGec9QYtmVH2fbLpj86CFWkrNOkt/Fvty4KZG5lTglL9j/gJ87w==}
     dev: false
 
   /fsevents@2.3.2:

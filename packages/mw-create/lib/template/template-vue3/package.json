@@ -1,0 +1,19 @@
+{
+  "name": "vue3-vite-init-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "less": "^4.2.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vue": "^3.3.4"
+  }
+}

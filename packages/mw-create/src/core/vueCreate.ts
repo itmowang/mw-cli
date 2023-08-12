@@ -2,13 +2,13 @@ const prompts = require("prompts");
 const config = require("../config/repo.config");
 
 interface Create {
-    projectName: string; // 项目名称
-    projectVersion: string; // 项目版本号
-    projectTemplate: string; // 项目模版
+  projectName: string; // 项目名称
+  projectVersion: string; // 项目版本号
+  projectTemplate: string; // 项目模版
 }
 
 // 读取vue模版
-const vueCreate = async (create:Create) => {
+const vueCreate = async (create: Create) => {
   const {
     blue,
     cyan,
@@ -42,11 +42,15 @@ const vueCreate = async (create:Create) => {
       const copydir = require("copy-dir");
 
       console.log(config);
+      console.log(create.projectName);
       
-      copydir.sync(config, `/${create.projectName}`, {
+      copydir.sync(config, `./${create.projectName}`, {
         utimes: true,  // keep add time and modify time
         mode: true,    // keep file mode
         cover: true    // cover file when exists, default is true
+      }, function (err: Error) {
+        if (err) throw err;
+        console.log('done');
       });
 
 
