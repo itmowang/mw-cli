@@ -2,8 +2,6 @@
 
 // 调用pkgjson
 const pkg = require("../../package.json")
-console.log(pkg.version);
-
 
 // 引用commander
 const program = require("commander")
