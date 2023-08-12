@@ -38,15 +38,28 @@ const vueCreate = async (create:Create) => {
     const { vueTemplate } = response;
     // 下载一号模版
     if (vueTemplate == "1") {
-      const downloadFile = require("../util/download");
-      downloadFile(config, create.projectName , process.cwd(), (err: any) => {
-        if (err) {
-          console.log(err);
-        } else {
-          // 下载成功后就退出进程
-          process.exit();
-        }
+      // 走copy-dir 不走github了 没意义 
+      const copydir = require("copy-dir");
+
+      console.log(config);
+      
+      copydir.sync(config, `/${create.projectName}`, {
+        utimes: true,  // keep add time and modify time
+        mode: true,    // keep file mode
+        cover: true    // cover file when exists, default is true
       });
+
+
+      // 下载逻辑以前
+      // const downloadFile = require("../util/download");
+      // downloadFile(config, create.projectName , process.cwd(), (err: any) => {
+      //   if (err) {
+      //     console.log(err);
+      //   } else {
+      //     // 下载成功后就退出进程
+      //     process.exit();
+      //   }
+      // });
     }
     // ...
 

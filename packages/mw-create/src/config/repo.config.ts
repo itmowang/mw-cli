@@ -1,3 +1,4 @@
-const repoUrl = 'itmowang/vue3-vite-init-template';
+import path = require("path");
+const repoUrl =  path.resolve(__dirname, "../../template/template-vue3");
 
 module.exports = repoUrl;
