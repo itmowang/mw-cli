@@ -1,2 +1,17 @@
-## 使用的包
+## 安装指令
+
+```bash
+npm install mw-create -g
+```
+
+## 使用指令
+
+```bash
+mwcli
+```
+
+
+
+
+
 
