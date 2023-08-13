@@ -53,6 +53,9 @@ const createCommand = () => __awaiter(void 0, void 0, void 0, function* () {
         if (projectTemplate === "vue") {
             vueCommand(response);
         }
+        else {
+            console.log(lightRed("暂时只支持vue模版"));
+        }
     }))();
 });
 module.exports = createCommand;

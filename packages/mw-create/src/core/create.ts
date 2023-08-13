@@ -53,6 +53,8 @@ const createCommand = async () => {
     const { projectName, projectVersion, projectTemplate } = response;
     if (projectTemplate === "vue") {
       vueCommand(response);
+    }else{
+      console.log(lightRed("暂时只支持vue模版"));
     }
 
   })();
