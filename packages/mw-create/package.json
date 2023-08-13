@@ -1,6 +1,6 @@
 {
   "name": "mw-create",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "",
   "main": "./lib/bin/index.js",
   "bin": {
@@ -8,7 +8,10 @@
   },
   "scripts": {
     "test": "ts-node ./bin/index",
-    "build": "node ./bin/copyDir.ts && tsc"
+    "build": "node ./bin/copyDir.ts && tsc",
+    "minor": "npm version minor && pnpm build && npm publish",
+    "major": "npm version major && pnpm build && npm publish",
+    "patch": "npm version patch && pnpm build && npm publish"
   },
   "publishConfig": {
     "access": "public"
