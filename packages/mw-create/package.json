@@ -1,6 +1,6 @@
 {
-  "name": "@mw-cli/mw-create",
-  "version": "1.0.8",
+  "name": "mw-create",
+  "version": "1.0.10",
   "description": "",
   "main": "./lib/bin/index.js",
   "bin": {
@@ -15,6 +15,10 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itmowang/mw-cli.git"
   },
   "keywords": [],
   "author": "",
