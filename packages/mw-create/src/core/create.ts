@@ -1,7 +1,7 @@
 // 读取vue模版
 const vueCommand = require("./vueCreate");
 
-const createCommand = async () => {
+const createCommand = async (projectName = '') => {
   const {
     blue,
     cyan,
@@ -18,11 +18,13 @@ const createCommand = async () => {
       type: "text",
       name: "projectName",
       message: "请输入你需要创建的项目名称",
+      initial: projectName,
     },
     {
       type: "text",
       name: "projectVersion",
       message: "请输入你需要创建的项目版本号",
+      initial: "1.0.0",
     },
     {
       type: "select",

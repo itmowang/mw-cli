@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 // 读取vue模版
 const vueCommand = require("./vueCreate");
-const createCommand = () => __awaiter(void 0, void 0, void 0, function* () {
+const createCommand = (projectName = '') => __awaiter(void 0, void 0, void 0, function* () {
     const { blue, cyan, green, lightBlue, lightGreen, lightRed, } = require("kolorist");
     const prompts = require("prompts");
     const questions = [
@@ -18,11 +18,13 @@ const createCommand = () => __awaiter(void 0, void 0, void 0, function* () {
             type: "text",
             name: "projectName",
             message: "请输入你需要创建的项目名称",
+            initial: projectName,
         },
         {
             type: "text",
             name: "projectVersion",
             message: "请输入你需要创建的项目版本号",
+            initial: "1.0.0",
         },
         {
             type: "select",
