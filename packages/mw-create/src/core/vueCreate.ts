@@ -40,19 +40,22 @@ const vueCreate = async (create: Create) => {
     if (vueTemplate == "1") {
       // 走copy-dir 不走github了 没意义 
       const copydir = require("copy-dir");
-
-      console.log(config);
-      console.log(create.projectName);
-      
+      // 进度
+      const ora = require("ora");
+      const spinner = ora(blue("下载模版中..."));
       copydir.sync(config, `./${create.projectName}`, {
         utimes: true,  // keep add time and modify time
         mode: true,    // keep file mode
-        cover: true    // cover file when exists, default is true
+        cover: true,    // cover file when exists, default is true
+        filter: function (stat: string, filepath: any, filename: string) {
+          return true;  // remind to return a true value when file check passed.
+        }
       }, function (err: Error) {
         if (err) throw err;
-        console.log('done');
+        spinner.fail(lightRed(`项目模版创建失败`));
       });
 
+      spinner.succeed(lightGreen("项目模版创建成功"));
 
       // 下载逻辑以前
       // const downloadFile = require("../util/download");
@@ -65,7 +68,6 @@ const vueCreate = async (create: Create) => {
       //   }
       // });
     }
-    // ...
 
   })();
 };
