@@ -10,6 +10,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 // 读取vue模版
 const nodeCreate = (create) => __awaiter(void 0, void 0, void 0, function* () {
+    const prompts = require("prompts");
+    const config = require("../config/repo.config");
     const { blue, cyan, green, lightBlue, lightGreen, lightRed, } = require("kolorist");
     const questions = [
         {
@@ -27,14 +29,13 @@ const nodeCreate = (create) => __awaiter(void 0, void 0, void 0, function* () {
     ];
     (() => __awaiter(void 0, void 0, void 0, function* () {
         const response = yield prompts(questions);
-        const { vueTemplate } = response;
-        // 下载一号模版
+        const { nodeTemplate } = response;
         // 走copy-dir 不走github了 没意义 
         const copydir = require("copy-dir");
         // 进度
         const ora = require("ora");
         const spinner = ora(blue("下载模版中..."));
-        copydir.sync(`${config}/${vueTemplate}`, `./${create.projectName}`, {
+        copydir.sync(`${config}/${nodeTemplate}`, `./${create.projectName}`, {
             utimes: true,
             mode: true,
             cover: true,

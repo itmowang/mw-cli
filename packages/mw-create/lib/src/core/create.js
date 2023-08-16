@@ -12,7 +12,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 const vueCommand = require("./vueCreate");
 // 读取node模版
 const nodeCommand = require("./nodeCreate");
-const createCommand = (projectName = '') => __awaiter(void 0, void 0, void 0, function* () {
+const createCommand = (projectName = "") => __awaiter(void 0, void 0, void 0, function* () {
     const { blue, cyan, green, lightBlue, lightGreen, lightRed, } = require("kolorist");
     const prompts = require("prompts");
     const questions = [

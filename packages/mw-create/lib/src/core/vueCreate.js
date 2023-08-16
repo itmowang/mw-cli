@@ -8,10 +8,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-const prompts = require("prompts");
-const config = require("../config/repo.config");
 // 读取vue模版
 const vueCreate = (create) => __awaiter(void 0, void 0, void 0, function* () {
+    const prompts = require("prompts");
+    const config = require("../config/repo.config");
     const { blue, cyan, green, lightBlue, lightGreen, lightRed, } = require("kolorist");
     const questions = [
         {
@@ -30,8 +30,7 @@ const vueCreate = (create) => __awaiter(void 0, void 0, void 0, function* () {
     (() => __awaiter(void 0, void 0, void 0, function* () {
         const response = yield prompts(questions);
         const { vueTemplate } = response;
-        // 下载一号模版
-        // 走copy-dir 不走github了 没意义 
+        // 走copy-dir 不走github了 没意义
         const copydir = require("copy-dir");
         // 进度
         const ora = require("ora");
@@ -42,7 +41,7 @@ const vueCreate = (create) => __awaiter(void 0, void 0, void 0, function* () {
             cover: true,
             filter: function (stat, filepath, filename) {
                 return true; // remind to return a true value when file check passed.
-            }
+            },
         }, function (err) {
             if (err)
                 throw err;
