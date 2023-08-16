@@ -10,6 +10,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 // 读取vue模版
 const vueCommand = require("./vueCreate");
+// 读取node模版
+const nodeCommand = require("./nodeCreate");
 const createCommand = (projectName = '') => __awaiter(void 0, void 0, void 0, function* () {
     const { blue, cyan, green, lightBlue, lightGreen, lightRed, } = require("kolorist");
     const prompts = require("prompts");
@@ -54,6 +56,9 @@ const createCommand = (projectName = '') => __awaiter(void 0, void 0, void 0, fu
         const { projectName, projectVersion, projectTemplate } = response;
         if (projectTemplate === "vue") {
             vueCommand(response);
+        }
+        else if (projectTemplate === "node") {
+            nodeCommand(response);
         }
         else {
             console.log(lightRed("暂时只支持vue模版"));

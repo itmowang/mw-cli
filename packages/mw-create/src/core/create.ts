@@ -1,7 +1,9 @@
 // 读取vue模版
 const vueCommand = require("./vueCreate");
+// 读取node模版
+const nodeCommand = require("./nodeCreate");
 
-const createCommand = async (projectName = '') => {
+const createCommand = async (projectName = "") => {
   const {
     blue,
     cyan,
@@ -55,10 +57,11 @@ const createCommand = async (projectName = '') => {
     const { projectName, projectVersion, projectTemplate } = response;
     if (projectTemplate === "vue") {
       vueCommand(response);
-    }else{
+    } else if (projectTemplate === "node") {
+      nodeCommand(response);
+    } else {
       console.log(lightRed("暂时只支持vue模版"));
     }
-
   })();
 };
 
