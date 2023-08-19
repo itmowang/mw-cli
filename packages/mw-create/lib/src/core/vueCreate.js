@@ -24,6 +24,11 @@ const vueCreate = (create) => __awaiter(void 0, void 0, void 0, function* () {
                     value: "template-vue3-ts-vite",
                     description: green("vue3 + ts + vite 项目模版"),
                 },
+                {
+                    title: "template-vue3-webpack-ts",
+                    value: "template-vue3-webpack-ts",
+                    description: green("vue3 + ts + webpack 项目模版"),
+                },
             ],
         },
     ];

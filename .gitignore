@@ -2,3 +2,4 @@ node_modules
 packages/**/node_modules
 /packages/mw-create/dist/
 /packages/mw-create/template/template-vue3-webpack-ts/dist/
+/packages/mw-create/lib

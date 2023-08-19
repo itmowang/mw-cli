@@ -4,7 +4,7 @@
 const spawn = require("cross-spawn");
 
 // 调用pkgjson
-const pkg = require("../package.json");
+const pkg = require("../../package.json");
 
 // 引用commander
 const program = require("commander");

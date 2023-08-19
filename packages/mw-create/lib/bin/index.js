@@ -3,7 +3,7 @@
 // 引用cross-spawn
 const spawn = require("cross-spawn");
 // 调用pkgjson
-const pkg = require("../package.json");
+const pkg = require("../../package.json");
 // 引用commander
 const program = require("commander");
 // 引用创建项目逻辑
