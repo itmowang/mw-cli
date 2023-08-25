@@ -30,7 +30,7 @@ const nodeCreate = (create) => __awaiter(void 0, void 0, void 0, function* () {
     (() => __awaiter(void 0, void 0, void 0, function* () {
         const response = yield prompts(questions);
         const { nodeTemplate } = response;
-        // 走copy-dir 不走github了 没意义 
+        // 走copy-dir 不走github了 没意义
         const copydir = require("copy-dir");
         // 进度
         const ora = require("ora");
@@ -41,7 +41,7 @@ const nodeCreate = (create) => __awaiter(void 0, void 0, void 0, function* () {
             cover: true,
             filter: function (stat, filepath, filename) {
                 return true; // remind to return a true value when file check passed.
-            }
+            },
         }, function (err) {
             if (err)
                 throw err;

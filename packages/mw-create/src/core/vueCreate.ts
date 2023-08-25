@@ -39,13 +39,13 @@ const vueCreate = async (create: Create) => {
 
   (async () => {
     const response = await prompts(questions);
-    const { vueTemplate } = response; 
+    const { vueTemplate } = response;
     // 走copy-dir 不走github了 没意义
     const copydir = require("copy-dir");
     // 进度
     const ora = require("ora");
     const spinner = ora(blue("下载模版中..."));
-    
+
     copydir.sync(
       `${config}/${vueTemplate}`,
       `./${create.projectName}`,

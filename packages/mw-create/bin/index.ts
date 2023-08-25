@@ -13,13 +13,12 @@ const program = require("commander");
 const createProject = require("../src/core/create");
 
 //版本号 -v --version 选项
-program.version(pkg.version, '-v,--version');
+program.version(pkg.version, '-v,--version')
 
 // 创建项目
 program.command("create <projectName>").description("创建项目").action((projectName: string) => {
     createProject(projectName);
 });
-
 
 
 program.parse(process.argv);
