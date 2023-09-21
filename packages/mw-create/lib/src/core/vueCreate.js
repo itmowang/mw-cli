@@ -29,15 +29,19 @@ const vueCreate = (create) => __awaiter(void 0, void 0, void 0, function* () {
                     value: "template-vue3-webpack-ts",
                     description: green("vue3 + ts + webpack 项目模版"),
                 },
+                {
+                    title: "multi-application-template",
+                    value: "multi-application-template",
+                    description: green("vue3 + ts + vite 多应用模板"),
+                },
             ],
         },
     ];
     (() => __awaiter(void 0, void 0, void 0, function* () {
         const response = yield prompts(questions);
         const { vueTemplate } = response;
-        // 走copy-dir 不走github了 没意义
+        // 复制template目录下载到本地
         const copydir = require("copy-dir");
-        // 进度
         const ora = require("ora");
         const spinner = ora(blue("下载模版中..."));
         copydir.sync(`${config}/${vueTemplate}`, `./${create.projectName}`, {

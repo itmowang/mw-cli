@@ -1,0 +1,23 @@
+{
+  "name": "multi-application-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.6.3",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "dotenv": "^16.3.1",
+    "less": "^4.2.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  }
+}
