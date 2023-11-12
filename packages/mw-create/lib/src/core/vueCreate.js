@@ -34,6 +34,11 @@ const vueCreate = (create) => __awaiter(void 0, void 0, void 0, function* () {
                     value: "multi-application-template",
                     description: green("vue3 + ts + vite 多应用模板"),
                 },
+                {
+                    title: "template-vue3-ts-ssr",
+                    value: "template-vue3-ssr",
+                    description: green("vue3 + vite + SSR 项目模版(未完成)"),
+                },
             ],
         },
     ];
