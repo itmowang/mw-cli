@@ -1,0 +1,42 @@
+{
+  "\u0000plugin-vue:export-helper": [
+  ],
+  "\u0000vite/modulepreload-polyfill": [
+  ],
+  "../../../../node_modules/.pnpm/@unhead+dom@1.8.3/node_modules/@unhead/dom/dist/index.mjs": [
+  ],
+  "../../../../node_modules/.pnpm/@unhead+shared@1.8.3/node_modules/@unhead/shared/dist/index.mjs": [
+  ],
+  "../../../../node_modules/.pnpm/@unhead+vue@1.8.3_vue@3.3.8/node_modules/@unhead/vue/dist/shared/vue.cf295fb1.mjs": [
+  ],
+  "../../../../node_modules/.pnpm/@vue+reactivity@3.3.8/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
+  ],
+  "../../../../node_modules/.pnpm/@vue+runtime-core@3.3.8/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
+  ],
+  "../../../../node_modules/.pnpm/@vue+runtime-dom@3.3.8/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
+  ],
+  "../../../../node_modules/.pnpm/@vue+shared@3.3.8/node_modules/@vue/shared/dist/shared.esm-bundler.js": [
+  ],
+  "../../../../node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs": [
+  ],
+  "../../../../node_modules/.pnpm/unhead@1.8.3/node_modules/unhead/dist/index.mjs": [
+  ],
+  "../../../../node_modules/.pnpm/vite-ssg@0.23.5_vite@4.5.0_vue-router@4.2.5_vue@3.3.8/node_modules/vite-ssg/dist/index.mjs": [
+  ],
+  "../../../../node_modules/.pnpm/vite-ssg@0.23.5_vite@4.5.0_vue-router@4.2.5_vue@3.3.8/node_modules/vite-ssg/dist/shared/vite-ssg.5912142e.mjs": [
+  ],
+  "../../../../node_modules/.pnpm/vite-ssg@0.23.5_vite@4.5.0_vue-router@4.2.5_vue@3.3.8/node_modules/vite-ssg/dist/shared/vite-ssg.a009fbf1.mjs": [
+  ],
+  "../../../../node_modules/.pnpm/vue-router@4.2.5_vue@3.3.8/node_modules/vue-router/dist/vue-router.mjs": [
+  ],
+  "index.html": [
+  ],
+  "src/App.vue": [
+  ],
+  "src/main.ts": [
+  ],
+  "src/router/index.ts": [
+  ],
+  "src/views/Index.vue": [
+  ]
+}
