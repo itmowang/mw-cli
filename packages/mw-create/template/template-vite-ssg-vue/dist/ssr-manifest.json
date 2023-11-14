@@ -19,6 +19,8 @@
   ],
   "../../../../node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs": [
   ],
+  "../../../../node_modules/.pnpm/pinia@2.1.7_typescript@5.2.2_vue@3.3.8/node_modules/pinia/dist/pinia.mjs": [
+  ],
   "../../../../node_modules/.pnpm/unhead@1.8.3/node_modules/unhead/dist/index.mjs": [
   ],
   "../../../../node_modules/.pnpm/vite-ssg@0.23.5_vite@4.5.0_vue-router@4.2.5_vue@3.3.8/node_modules/vite-ssg/dist/index.mjs": [
@@ -26,6 +28,8 @@
   "../../../../node_modules/.pnpm/vite-ssg@0.23.5_vite@4.5.0_vue-router@4.2.5_vue@3.3.8/node_modules/vite-ssg/dist/shared/vite-ssg.5912142e.mjs": [
   ],
   "../../../../node_modules/.pnpm/vite-ssg@0.23.5_vite@4.5.0_vue-router@4.2.5_vue@3.3.8/node_modules/vite-ssg/dist/shared/vite-ssg.a009fbf1.mjs": [
+  ],
+  "../../../../node_modules/.pnpm/vue-demi@0.14.6_vue@3.3.8/node_modules/vue-demi/lib/index.mjs": [
   ],
   "../../../../node_modules/.pnpm/vue-router@4.2.5_vue@3.3.8/node_modules/vue-router/dist/vue-router.mjs": [
   ],
@@ -36,6 +40,8 @@
   "src/main.ts": [
   ],
   "src/router/index.ts": [
+  ],
+  "src/views/Home.vue": [
   ],
   "src/views/Index.vue": [
   ]

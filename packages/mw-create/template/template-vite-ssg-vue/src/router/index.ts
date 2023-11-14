@@ -10,7 +10,7 @@ export const router:RouteRecordRaw[] = [{
 {
     path: "/Home",
     name: "Home",
-    component: Index,
+    component: Home,
 }
 ]
 
